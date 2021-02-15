@@ -1,0 +1,23 @@
+{
+  "name": "chaplin-cars",
+  "version": "1.0.0",
+  "description": "This is an example JavaScript application using <a href=\"https://github.com/chaplinjs/chaplin\">Chaplin.js</a> and <a href=\"http://backbonejs.org/\">Backbone.js</a>. It’s based on the <a href=\"https://github.com/chaplinjs/chaplin-boilerplate-plain\">Chaplin Boilerplate in plain JavaScript</a>.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jayanti-prajapati/chaplin-cars.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jayanti-prajapati/chaplin-cars/issues"
+  },
+  "homepage": "https://github.com/jayanti-prajapati/chaplin-cars#readme",
+  "dependencies": {
+    "bootstrap": "^4.6.0",
+    "http-server": "^0.12.3"
+  }
+}

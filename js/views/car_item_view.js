@@ -1,24 +1,23 @@
-define([
-  'views/base/view',
-  'text!templates/car_item.hbs'
-], function(View, template) {
-  'use strict';
+define(["views/base/view", "text!templates/car_item.hbs"], function (
+  View,
+  template
+) {
+  "use strict";
 
   var CarItemView = View.extend({
-
     template: template,
 
-    tagName: 'li',
-    className: 'car-item',
+    tagName: "<tr>",
+    className: "car-item",
 
     listen: {
-      'change model': 'render'
+      "change model": "render",
     },
     events: {
-      'click .delete': 'delete'
+      "click .delete": "delete",
     },
 
-    'delete': function (event) {
+    delete: function (event) {
       event.preventDefault();
       // Shortcuts
       var model = this.model;
@@ -28,8 +27,7 @@ define([
       // Dispose the model explicitly. It shouldn’t be used elsewhere.
       model.dispose();
       collection.save();
-    }
-
+    },
   });
 
   return CarItemView;

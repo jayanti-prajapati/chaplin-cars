@@ -1,23 +1,17 @@
 <h2>Edit Car</h2>
 
 <form>
+ <div class="form-group">
+    <label for="name">Name</label>
+    <input  id="name" class="input-name form-control" value="{{name}}" placeholder="enter car name">
+  </div>
+ <div class="form-group">
+    <label for="name">Manufacturer</label>
+    <input type="text" class="input-manufactured form-control" value="{{manufactured}}" placeholder="enter car manufacturer">
+  </div>
 
-  <ul>
-    <li>
-      <label>
-        Name:
-        <input type="text" class="input-name" value="{{name}}">
-       </label>
-    </li>
-    <li>
-      <label>
-        Manufactured:
-        <input type="text" class="input-manufactured" value="{{manufactured}}">
-       </label>
-    </li>
-   </ul>
 
-  <p><button type="submit">Save</button></p>
+  <p><button class="btn btn-primary" type="submit">Save</button></p>
 
 </form>
 
